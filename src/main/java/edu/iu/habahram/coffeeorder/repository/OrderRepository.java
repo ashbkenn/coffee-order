@@ -48,6 +48,8 @@ public class OrderRepository {
                     throw new Exception("Condiment type '%s' is not valid".formatted(condiment));
             }
         }
+
+
         int receiptId = generateUniqueId();
 
         Receipt receipt = new Receipt(receiptId, beverage.getDescription(), beverage.cost());
